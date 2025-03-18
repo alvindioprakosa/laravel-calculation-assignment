@@ -12,12 +12,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $calculate = $this->calculate([1,5,3,2,5,2,1,1]);
+        $calculate = $this->calculate([1, 5, 3, 2, 5, 2, 1, 1]);
 
         return view('home', $calculate);
     }
 
-    public function calculate($listOfInteger) {
+    public function calculate($listOfInteger)
+    {
         $min = min($listOfInteger);
         $max = max($listOfInteger);
         $odd = Arr::where($listOfInteger, function ($value, $key) {
