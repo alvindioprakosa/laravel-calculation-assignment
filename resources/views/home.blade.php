@@ -907,7 +907,6 @@
 </head>
 
 <body class="bg-gray-100">
-
     <div class="container mx-auto p-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden w-full">
@@ -921,7 +920,5 @@
             </div>
         </div>
     </div>
-
 </body>
-
 </html>
