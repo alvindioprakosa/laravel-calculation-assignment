@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Arr;
 
 class HomeController extends Controller
 {
@@ -17,18 +16,11 @@ class HomeController extends Controller
 
     protected function calculate(array $numbers): array
     {
-        $min = min($numbers);
-        $max = max($numbers);
-        $odd = array_values(array_filter($numbers, fn($num) => $num % 2 !== 0));
-
-        return compact('numbers', 'min', 'max', 'odd');
+        return [
+            'numbers' => $numbers,
+            'min' => min($numbers),
+            'max' => max($numbers),
+            'odd' => array_values(array_filter($numbers, fn($num) => $num % 2 !== 0)),
+        ];
     }
-
-    // Resource methods below can be removed if not used
-    public function create() {}
-    public function store(Request $request) {}
-    public function show(string $id) {}
-    public function edit(string $id) {}
-    public function update(Request $request, string $id) {}
-    public function destroy(string $id) {}
 }
