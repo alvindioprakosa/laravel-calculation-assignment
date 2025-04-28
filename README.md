@@ -2,17 +2,26 @@
 
 ## Overview
 
-This repository is to fulfill assignment for upwork client
+This repository is created to fulfill an assignment from an Upwork client.
 
 ### Task
-Complete a simple assignment in Python or your language of choice. Specifically, can you create a function that takes an array of integers and calculates and displays the minimum, maximum and number of odd numbers in the array?
+Create a simple program using Laravel (or any preferred language) that:
+- Takes an array of integers
+- Calculates and displays:
+  - Minimum value
+  - Maximum value
+  - List of odd numbers
 
 ## Getting Started
 
 ### Prerequisites
 
 Make sure you have the following installed:
-- PHP 8.3
- 
-## screenshot
-![Screenshot](https://raw.githubusercontent.com/indimasia/laravel-calculation-assignment/refs/heads/main/result.png)
+- PHP 8.3+
+- Composer
+
+### How to Run
+1. Clone this repository.
+2. Install dependencies:
+   ```bash
+   composer install
